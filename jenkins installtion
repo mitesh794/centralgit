@@ -1,1 +1,12 @@
+Jenkins Installtion URL : = https://www.jenkins.io/doc/book/installing/linux/
+
+Commands to Install : -
+    1  apt update -y
+    2  apt install fontconfig openjdk-21-jre -y
+    3  java -version
+    4  sudo wget -O /usr/share/keyrings/jenkins-keyring.asc   https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key
+    5  echo "deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc]"   https://pkg.jenkins.io/debian-stable binary/ | sudo tee   /etc/apt/sources.list.d/jenkins.list > /dev/null
+    6  sudo apt-get update
+    7  sudo apt-get install jenkins
+    8  history
 
